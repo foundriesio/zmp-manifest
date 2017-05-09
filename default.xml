@@ -15,7 +15,13 @@
   <project name="zephyr-fota-hawkbit"/>
   <project name="genesis-sdk-build"
 	   remote="linaro-technologies"
-	   path="build">
+	   path="sdk-build">
 	<linkfile src="genesis" dest="genesis"/>
   </project>
+  <project name="genesis-sdk-container"
+	   remote="linaro-technologies"
+	   path="sdk-build/other/genesis-sdk-container"/>
+  <project name="ltd-docs"
+	   remote="linaro-technologies"
+	   path="doc"/>
 </manifest>
