@@ -1,30 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="linaro"
-	  fetch="https://github.com/linaro"/>
-  <remote name="linaro-technologies"
-	  fetch="https://github.com/linaro-technologies"/>
-  <default remote="linaro"
+  <remote name="ltd-dev"
+	  fetch="https://github.com/linaro-technologies-dev"/>
+
+  <default remote="ltd-dev"
 	   sync-j="4"/>
 
   <project name="zephyr"
-	   revision="master-upstream-dev-17.05"/>
+	   revision="ltd-17.05"/>
   <project name="mcuboot"
-	   revision="master-upstream-dev-17.05"/>
+	   revision="ltd-17.05"/>
+
   <project name="zephyr-fota-hawkbit"
-	   revision="master-17.05"/>
+	   revision="ltd-17.05"/>
   <project name="genesis-sdk-build"
-	   remote="linaro-technologies"
-	   revision="master-17.05"
+	   revision="ltd-17.05"
 	   path="sdk-build">
 	<linkfile src="genesis" dest="genesis"/>
   </project>
   <project name="genesis-sdk-container"
-	   remote="linaro-technologies"
-	   revision="master-17.05"
+	   revision="ltd-17.05"
 	   path="sdk-build/other/genesis-sdk-container"/>
   <project name="ltd-docs"
-	   remote="linaro-technologies"
-	   revision="master-17.05"
+	   revision="ltd-17.05"
 	   path="doc"/>
 </manifest>
