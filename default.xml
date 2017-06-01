@@ -4,7 +4,7 @@
 	  fetch="https://github.com/linaro-technologies-dev"/>
 
   <default remote="ltd-dev"
-           revision="ltd-17.05"
+           revision="ltd-17.06"
 	   sync-j="4"/>
 
   <project name="zephyr"/>
