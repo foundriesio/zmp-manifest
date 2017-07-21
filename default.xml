@@ -10,7 +10,7 @@
   <project name="zephyr"/>
   <project name="mcuboot"/>
 
-  <project name="zephyr-fota-hawkbit"/>
+  <project name="zephyr-fota-samples"/>
   <project name="genesis-sdk-build"
 	   path="sdk-build">
 	<linkfile src="genesis" dest="genesis"/>
