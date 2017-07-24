@@ -13,7 +13,7 @@
   <project name="zephyr-fota-samples"/>
   <project name="genesis-sdk-build"
 	   path="sdk-build">
-	<linkfile src="genesis" dest="genesis"/>
+	<linkfile src="genesis.py" dest="genesis"/>
   </project>
   <project name="genesis-sdk-container"
 	   path="sdk-build/other/genesis-sdk-container"/>
