@@ -2,6 +2,8 @@
 <manifest>
   <remote name="ltd-dev"
 	  fetch="https://github.com/linaro-technologies-dev"/>
+  <remote name="ARMmbed"
+	  fetch="https://github.com/ARMmbed"/>
 
   <default remote="ltd-dev"
            revision="ltd-17.07"
@@ -9,6 +11,9 @@
 
   <project name="zephyr"/>
   <project name="mcuboot"/>
+  <project remote="ARMmbed" name="mbedtls"
+	    revision="f2a597fa3dd1c7b15e0fee62f6932b253295803d"
+	    path="mcuboot/sim/mcuboot-sys/mbedtls" />
 
   <project name="zephyr-fota-samples"/>
   <project name="genesis-sdk-build"
