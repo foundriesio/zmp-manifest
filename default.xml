@@ -22,6 +22,9 @@
   </project>
   <project name="genesis-sdk-container"
 	   path="sdk-build/other/genesis-sdk-container"/>
+  <project name="genesis-sdk-prebuilt"
+	   clone-depth="1"
+	   path="sdk-build/other/genesis-sdk-prebuilt"/>
   <project name="ltd-docs"
 	   path="doc"/>
 </manifest>
