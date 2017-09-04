@@ -6,7 +6,7 @@
 	  fetch="https://github.com/ARMmbed"/>
 
   <default remote="ltd-dev"
-           revision="ltd-17.08"
+           revision="ltd-17.09"
 	   sync-j="4"/>
 
   <project name="zephyr"/>
