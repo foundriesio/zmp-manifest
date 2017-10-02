@@ -1,30 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="ltd-dev"
-	  fetch="https://github.com/linaro-technologies-dev"/>
-  <remote name="ARMmbed"
-	  fetch="https://github.com/ARMmbed"/>
+  <remote name="osf-dev"
+	  fetch="https://git.foundries.io/development/microplatforms/zephyr"/>
 
-  <default remote="ltd-dev"
-           revision="ltd-17.09"
+  <default remote="osf-dev"
+           revision="osf-17.10"
 	   sync-j="4"/>
 
   <project name="zephyr"/>
   <project name="mcuboot"/>
-  <project remote="ARMmbed" name="mbedtls"
+  <project name="mbedtls"
 	    revision="f2a597fa3dd1c7b15e0fee62f6932b253295803d"
 	    path="mcuboot/sim/mcuboot-sys/mbedtls" />
 
   <project name="zephyr-fota-samples"/>
-  <project name="genesis-sdk-build"
-	   path="sdk-build">
-	<linkfile src="genesis.py" dest="genesis"/>
+  <project name="zmp-build"
+	   path="build">
+        <!-- TODO: rename the file itself as part of the cut over to osf-17.10 -->
+	<linkfile src="genesis.py" dest="zmp"/>
   </project>
-  <project name="genesis-sdk-container"
-	   path="sdk-build/other/genesis-sdk-container"/>
-  <project name="genesis-sdk-prebuilt"
+  <project name="zmp-container"
+	   path="build/other/zmp-container"/>
+  <project name="zmp-prebuilt"
 	   clone-depth="1"
-	   path="sdk-build/other/genesis-sdk-prebuilt"/>
-  <project name="ltd-docs"
-	   path="doc"/>
+	   path="build/other/zmp-prebuilt"/>
 </manifest>
