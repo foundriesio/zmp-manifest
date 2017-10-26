@@ -16,8 +16,7 @@
   <project name="zephyr-fota-samples"/>
   <project name="zmp-build"
 	   path="build">
-        <!-- TODO: rename the file itself as part of the cut over to osf-17.10 -->
-	<linkfile src="genesis.py" dest="zmp"/>
+	<linkfile src="zmp.py" dest="zmp"/>
   </project>
   <project name="zmp-container"
 	   path="build/other/zmp-container"/>
