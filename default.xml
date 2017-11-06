@@ -4,7 +4,7 @@
           fetch="https://git.foundries.io/development/microplatforms/zephyr"/>
 
   <default remote="osf-dev"
-           revision="osf-17.10"
+           revision="master"
            sync-j="4"/>
 
   <project name="zephyr"/>
