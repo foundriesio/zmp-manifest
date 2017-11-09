@@ -1,27 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="osf-dev"
-	  fetch="https://git.foundries.io/development/microplatforms/zephyr"/>
-
-  <default remote="osf-dev"
-           revision="osf-17.10"
-	   sync-j="4"/>
-
-  <project name="zephyr"/>
-  <project name="mcuboot"/>
-  <project name="mbedtls"
-	    revision="f2a597fa3dd1c7b15e0fee62f6932b253295803d"
-	    path="mcuboot/sim/mcuboot-sys/mbedtls" />
-
-  <project name="zephyr-fota-samples"/>
-  <project name="zmp-build"
-	   path="build">
-        <!-- TODO: rename the file itself as part of the cut over to osf-17.10 -->
-	<linkfile src="genesis.py" dest="zmp"/>
+  <remote fetch="https://source.foundries.io" name="subscriber-microplatforms" />
+  
+  <default remote="subscriber-microplatforms" revision="master" sync-j="4" />
+  
+  <project name="mbedtls" path="mcuboot/sim/mcuboot-sys/mbedtls" remote="subscriber-microplatforms" revision="f2a597fa3dd1c7b15e0fee62f6932b253295803d" />
+  <project name="mcuboot" remote="subscriber-microplatforms" revision="8ccc09a09d92cc48cad44d227bff0f2c89534168" upstream="master" />
+  <project name="zephyr" remote="subscriber-microplatforms" revision="dacc202c115dff654705d50fab047e259936ec9d" upstream="master" />
+  <project name="zephyr-fota-samples" remote="subscriber-microplatforms" revision="eddb1e11525ef28dd50369a3954adf6053e0f9db" upstream="master" />
+  <project name="zmp-build" path="build" remote="subscriber-microplatforms" revision="45b8ea82a092ccfc360bfdd523ef6ed642381472" upstream="master">
+    <linkfile dest="zmp" src="zmp.py" />
   </project>
-  <project name="zmp-container"
-	   path="build/other/zmp-container"/>
-  <project name="zmp-prebuilt"
-	   clone-depth="1"
-	   path="build/other/zmp-prebuilt"/>
+  <project name="zmp-container" path="build/other/zmp-container" remote="subscriber-microplatforms" revision="1dd53213cd5927f02c74a61eec2a5d5dafafae62" upstream="master" />
+  <project clone-depth="1" name="zmp-prebuilt" path="build/other/zmp-prebuilt" remote="subscriber-microplatforms" revision="ad7fd50ba7ca2a8bf84afcdb510a6bd97e1cb0f4" upstream="master" />
 </manifest>
