@@ -1,209 +1,43 @@
 highlights:
-  - Zephyr tree from 1.10 development cycle, before CMake transition
-  - MCUBoot tree following the 1.0.0 release
-  - Fixes and other improvements to sample applications
+  - Highlight 1
+  - Highlight 2
+
 summary: |
-  This release includes a Zephyr tree from the the 1.10 development
-  cycle. This tree does not yet include the conversion of the build
-  system to CMake.
+ This is markdown text coverted to HTML that can do styling with **bold** and
+ *italics*. It will get converted to HTML that the web UI can display.
 
-  It includes an MCUBoot tree based on work done in the master
-  branch following the v1.0.0 tag, which includes some work making it
-  easier to port new boards to the bootloader than it was in that
-  release.
-
-  Finally, several sample applications are included, with numerous
-  improvements from publicly released versions.
 parts:
   - name: Zephyr microPlatform
     summary: |
+      This is a MarkDown **styling** of what happened to overall to this part.
     projects:
       - name: MCUBoot
         manifest_project: mcuboot
+        features:    # optional
+          - heading: Feature 1
+            summary: |
+              MarkDown **styled** description
+        bug_fixes:   # optional
+          - heading: Bug 1
+            summary: |
+              MarkDown **styled** description of issue
       - name: Zephyr
         manifest_project: zephyr
         features:    # optional
-          - heading: GPIO interface deprecations
+          - heading: Feature 1
             summary: |
-              The GPIO_PIN_ENABLE and GPIO_PIN_DISABLE configuration
-              constants, which overlap with functionality provided by the
-              pinux driver, were deprecated.
-          - heading: New CoAP API
-            summary: |
-              There is a new CoAP API; the existing API has been deprecated.
-          - heading: New HTTP API
-            summary: |
-              There is a new HTTP API based on the net-app framework;
-              the existing API has been deprecated.
-
-              Applications using the old API need to ensure
-              CONFIG_HTTP is enabled, and CONFIG_HTTP_APP is disabled,
-              to continue using the deprecated API. Such applications
-              should be updated to use the new API. The HTTP sample
-              applications were converted to use the new API, and can
-              be used as a reference.
-          - heading: New LED strip API
-            summary: |
-              A public API for strips, or strings, of individually
-              addressable LEDs was added, along with drivers for two
-              common chipsets and sample applications. Both RGB and
-              grayscale LED strip drivers can be implemented within
-              these APIs.
-          - heading: New "userspace" and driver API checking
-            summary: |
-              The Zephyr kernel now supports separate system and user
-              thread modes. User threads have limited access to kernel
-              objects, such as device drivers, semaphores, etc.
-
-              Many drivers had userspace system call handlers added
-              (I2C, ADC, PWM, RTC, etc), which enforce the separation
-              between the core kernel and a userspace thread at the
-              driver API call. However, existing APIs are unchanged.
-          - heading: New random subsystem
-            summary: |
-              Random number generation in Zephyr is undergoing a significant
-              refactor.  A new random subsystem was added, which provides
-              implementations for sys_rand32_get() based on hardware sources
-              of entropy. These sources in the drivers/random directory were
-              moved to "drivers/entropy". A Xoroshiro128+ PRNG was added to
-              the random subsystem; it is only recommended for
-              non-cryptographic purposes.
-          - heading: Updated crypto library usage
-            summary: |
-              Minor changes to the usage of the mbedtls and tinycrypt
-              libraries was merged.
-          - heading: New net_buf APIs
-            summary: |
-              Some new net_buf APIs were merged.
-
-              - net_buf_id(), which allows converting a buffer into a
-                zero-based index. The utility of this API will be
-                limited until a future refactor converts all struct
-                net_bufs to have a fixed user data size, however.
-
-              - net_buf_slist_put() and net_buf_slist_get(), which
-                should be used instead of sys_slist_*() equivalents to
-                ensure correct handling of buffer fragments when
-                net_bufs are placed in singly linked lists.
-          - heading: Power management for nRF52
-            summary: |
-                nRF52 series SoCs gained architecture-specific power
-                management support for transitioning the core into and
-                out of low power sleep states. This includes a sample
-                application, samples/boards/nrf52/power_mgr.
-          - heading: New sensor support for disco_l475_iot1
-            summary: |
-                Support for sensors on the STM32L4 board
-                disco_l475_iot1 was merged. This supports the LSM6DSL,
-                LIS3MDL, LPS22HB, and HTS221 sensors. Support is
-                disabled by default. Applications can enable sensor
-                support for this board using their .conf files.
-          - heading: USB improvements
-            summary: |
-              Work was merged to the USB subsystem to support CDC ECM
-              and composite USB devices.
-          - heading: Atmel SAM3 serial driver deprecated.
-            summary: |
-              The atmel_sam3 serial driver was deprecated.
-          - heading: LWM2M
-            summary: |
-              LwM2M protocol support migrated to the new CoAP API, and
-              now supports multiple network fragments.  This removes
-              the requirement for the large buffer sizes and makes the
-              overall protocol much more flexible.  It also received
-              various memory usage optimizations.
-          - heading: Flash scripts rewritten in Python
-            summary: |
-              The Zephyr flash and debug scripts, originally ported from
-              the RIOT RTOS, have been rewritten in Python to
-              eliminate a dependency on a Unix shell, replacing it with a
-              cross-platform alternative.
-          - heading: Miscellaneous STM32 improvements
-            summary: |
-              Other miscellaneous STM32-specific board code and
-              documentation fixups were merged.
-          - heading: Test conversions to ztest
-            summary: |
-              Numerous test cleanups were merged, including continued
-              conversions to the ztest framework.
-          - heading: Documentation updates for new website
-            summary: |
-              The Zephyr website was given a major re-work, and various
-              documentation links were updated accordingly.
+              MarkDown **styled** description
         bug_fixes:   # optional
-          - heading: LWM2M fixes
+          - heading: Bug 1
             summary: |
-              Some bug fixes and simplifications to LWM2M were merged.
-          - heading: Bluetooth Mesh
-            summary: |
-              Many fixes were merged for Bluetooth Mesh support.
-
-              Network Message Cache behavior was also improved.
-          - heading: Other Bluetooth fixes
-            summary: |
-              Some other fixes to the core BT controller and LE scan
-              handling code were also merged.
-          - heading: PAE fix for x86
-            summary: |
-              The x86 architecture MMU generation had a fix to PAE
-              page directory permissions.
-          - heading: Infinite loop in I2C for STM32F0, F3, F7
-            summary: |
-              A fix for a bug in an STM32 I2C driver was merged which
-              prevents the driver from entering into an infinite loop;
-              this affects F0, F3, and F7 based devices.
+              MarkDown **styled** description of issue
       - name: Zephyr FOTA Samples
         manifest_project: zephyr-fota-samples
-        features:
-          - heading: Memory optimizations
+        features:    # optional
+          - heading: Feature 1
             summary: |
-              Uses of sXprintf() were replaced with sXprintk()
-              alternatives, saving about 3.5 KB of flash.
-          - heading: "dm-hawkbit-mqtt: HTTP configuration update"
+              MarkDown **styled** description
+        bug_fixes:   # optional
+          - heading: Bug 1
             summary: |
-              The application was updated to disable the new HTTP
-              library, preserving use of the other, now-deprecated
-              library. Applications can use this as a reference while
-              transitioning to the new APIs.
-          - heading: "dm-hawkbit-mqtt: support for BLE Nano 2 board"
-            summary: |
-              JSON buffer sizes were tweaked to support longer strings
-              generated at runtime on the BLE Nano 2.
-          - heading: "dm-lwm2m: add firmware storage buffer"
-            summary: |
-              The application was updated to explicitly allocate a
-              buffer for storing firmware during the download
-              process. This is necessary since the upstream LWM2M
-              subsystem no longer allocates its own.
-          - heading: "dm-lwm2m: configuration sync with upstream"
-            summary: |
-              The large net buffer size setting was removed.  LwM2M no
-              longer needs the large contiguous buffer.
-
-              Extra buffer allocations were removed by default.  These
-              will eventually be needed for keeping a copy of packets
-              to be sent via 6lowpan.  But currently, these are not
-              used.
-        bug_fixes:
-          - heading: "dm-hawkbit-mqtt: improved resilience to lossy transports"
-            summary: |
-              BLE devices with minor antenna issues can have data
-              transmission delays.  More time is now allocated before
-              starting the TCP retry process.
-
-              This fixes an issue where net buffers would be exhausted
-              due to the previous 200ms TCP retry logic.
-          - heading: "dm-hawkbit-mqtt: logging fixes"
-            summary: |
-              Compilation warnings due to mis-used logging macros were fixed.
-          - heading: "dm-lwm2m: fix for HTTP firmware updates"
-            summary: |
-              When downloading firmware via the cf_proxy (translating
-              from HTTP -> CoAP) a CoAP ETAG option is used to specify
-              the version of the binary file.
-
-              The length of that ETAG can be quite large (including a
-              UUID), which is greater than what the buffer can hold by
-              default. This issue was resolved, fixing errors raised
-              when using HTTP download in resource 5/0/1 with
-              CONFIG_LWM2M_FIRMWARE_UPDATE_PULL_COAP_PROXY_SUPPORT=y.
+              MarkDown **styled** description of issue
