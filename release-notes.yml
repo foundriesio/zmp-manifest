@@ -1,118 +1,43 @@
 highlights:
-  - Final Zephyr commit before the build system moves to CMake
-  - MCUBoot memory and flash space optimizations
+  - Highlight 1
+  - Highlight 2
 
 summary: |
-  "This is the final release which uses the Linux kernel Kbuild
-  build system. The next release will have a CMake-based build
-  system. **All out of tree applications will need updates** to
-  their build systems to move to CMake. Refer to the Zephyr
-  Application Development Primer for details:
+ This is markdown text coverted to HTML that can do styling with **bold** and
+ *italics*. It will get converted to HTML that the web UI can display.
 
-  http://docs.zephyrproject.org/application/application.html"
 parts:
   - name: Zephyr microPlatform
     summary: |
+      This is a MarkDown **styling** of what happened to overall to this part.
     projects:
       - name: MCUBoot
         manifest_project: mcuboot
-        features:
-          - heading: Simulator tests rewritten in Cargo test format
+        features:    # optional
+          - heading: Feature 1
             summary: |
-              "The simulator tests have been rewritten to use Rust's
-              native testing framework. Users can run the tests by
-              running \"cargo test\" from the sim/ directory."
-          - heading: mbedTLS memory allocator
+              MarkDown **styled** description
+        bug_fixes:   # optional
+          - heading: Bug 1
             summary: |
-              The Zephyr port now uses a memory allocator from
-              mbedTLS, which provides some memory and flash savings
-              over the native Zephyr allocator.
-          - heading: New overwrite-only mode optimization option
-            summary: |
-              The overwrite-only update mode has a new option which
-              provides a performance optimization at the cost of not
-              erasing all of the old images. The optimization, when
-              enabled, only deletes the sectors in slot 0 needed to
-              copy in the update in slot 1. This is the new default
-              when overwrite-only is chosen.
+              MarkDown **styled** description of issue
       - name: Zephyr
         manifest_project: zephyr
-        features:
-          - heading: Final KBuild-based commit
+        features:    # optional
+          - heading: Feature 1
             summary: |
-              This is the **final Zephyr patch** which uses Kbuild as
-              the build system. The next Zephyr tree released will use
-              CMake. Applications should prepare for a build system
-              rewrite.
-          - heading: Memory domains for x86
+              MarkDown **styled** description
+        bug_fixes:   # optional
+          - heading: Bug 1
             summary: |
-              Memory domain APIs were implemented and merged for x86
-              and ARM targets. These allow generic API access to
-              architecture-specific hardware which can isolate memory
-              areas to individual threads.
-          - heading: Jailhouse support
-            summary: |
-              "Zephyr can now be run as a Jailhouse hypervisor's
-              \"inmate cell\". This port boots with the processor in
-              real mode, and handles the transition to 32-bit
-              protected mode before jumping to Zephyr's start code.
-              Detailed usage instructions are given in the commit
-              message for 97a871 (\"x86: Jailhouse port, tested for
-              UART (# 0, polling) and LOAPIC timer\")."
-          - heading: Bluetooth Mesh friend support
-            summary: |
-              Complete Friend support was merged for Bluetooth Mesh,
-              with corresponding updates to samples/bluetooth/mesh.
-          - heading: STM32 NUCLEO-F091RC board support
-            summary: |
-              SoC support for the STM32F091 has been added, along with
-              board support for NUCLEO-F091RC.
-          - heading: Tickless kernel for XTensa
-            summary: |
-              A tickless kernel implementation was merged for XTensa
-              targets.
-          - heading: DTS partition resizes for Nordic DKs
-            summary: |
-              Official nRF52 targets from Nordic (nrf52_pca10040,
-              nrf52840_pca10056) had their DTS partitions tweaked,
-              which may affect mcuboot users on those targets.
-          - heading: User mode documentation
-            summary: |
-              Documentation was added for the user mode threads kernel
-              feature.
-          - heading: USB CDC improvements
-            summary: |
-              Continuing improvements and breaking changes to USB were
-              merged, targeting the Communications Device Class. In
-              particular, the usb_cdc.h header has replaced cdc_acm.h,
-              as part of a series of changes improving support for CDC
-              ethernet devices.  The zperf performance testing
-              application received a netusb confinguration for testing
-              and using these changes, along with a build regression
-              fix.
-          - heading: Networking improvements
-            summary: |
-              In networking, the TCP implementation received support
-              for options parsing and storage of sent MSS, among other
-              improvements.
-        bug_fixes:
-          - heading: Bluetooth Mesh fixes
-            summary: |
-              Numerous bug fixes to Bluetooth Mesh were merged
-              (affecting provisioning, network decryption, credentials
-              selection, transport layer heartbeat subscription
-              matching, and more).
-          - heading: LWM2M fixes
-            summary: |
-              "A pair of LWM2M fixes were also merged, which fix the
-              engine's response to the peer when a write fails and
-              avoid a possible null pointer dereference."
+              MarkDown **styled** description of issue
       - name: Zephyr FOTA Samples
         manifest_project: zephyr-fota-samples
-        bug_fixes:
-          - heading:  "dm-lwm2m: Fix for temperature min/max values"
+        features:    # optional
+          - heading: Feature 1
             summary: |
-              A bug fix was merged to the LWM2M demonstration
-              application which properly maintains the minimum and
-              maximum observed temperature values managed by the IPSO
-              temperature object.
+              MarkDown **styled** description
+        bug_fixes:   # optional
+          - heading: Bug 1
+            summary: |
+              MarkDown **styled** description of issue
