@@ -5,9 +5,9 @@
   
   <project name="mbedtls" path="mcuboot/sim/mcuboot-sys/mbedtls" remote="subscriber-microplatforms" revision="f2a597fa3dd1c7b15e0fee62f6932b253295803d" />
   <project name="mcuboot" remote="subscriber-microplatforms" revision="ecebcdf87933256d162676e164f174b3bcd04347" upstream="master" />
-  <project name="zephyr" remote="subscriber-microplatforms" revision="a7be20574ccdc901a2e50e6a5ca34da8175589ae" upstream="master" />
-  <project name="zephyr-fota-samples" remote="subscriber-microplatforms" revision="1b396fb74b5393b4a5d1f3b70a37ddc0943532f5" upstream="master" />
-  <project name="zmp-build" path="build" remote="subscriber-microplatforms" revision="89c718a9b746793479bb3f98913a5065ba92135d" upstream="master">
+  <project name="zephyr" remote="subscriber-microplatforms" revision="06f1e76ed252104b6b315b961286719faeb69b3a" upstream="master" />
+  <project name="zephyr-fota-samples" remote="subscriber-microplatforms" revision="c65ed6afaf1eb9fac46ba253baaa69eeb03bf460" upstream="master" />
+  <project name="zmp-build" path="build" remote="subscriber-microplatforms" revision="281b0d81618045882b76c2f0a746fa6cf94515ef" upstream="master">
     <linkfile dest="zmp" src="zmp.py" />
   </project>
   <project name="zmp-container" path="build/other/zmp-container" remote="subscriber-microplatforms" revision="c742227db8d79b623120bac11a5458949ce228ea" upstream="master" />
