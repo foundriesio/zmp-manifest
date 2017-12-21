@@ -1,49 +1,43 @@
 highlights:
-  - Zephyr tree based on v1.10
+  - Highlight 1
+  - Highlight 2
 
 summary: |
- This is the final update for the Zephyr v1.10 development cycle.
-
- The next update will be non-fast-forward update to the Zephyr
- repository, to begin development based on the v1.11 master branch.
+ This is markdown text coverted to HTML that can do styling with **bold** and
+ *italics*. It will get converted to HTML that the web UI can display.
 
 parts:
   - name: Zephyr microPlatform
     summary: |
-      Zephyr v1.10 based tree. The main additional out of tree patches
-      are necessary to port the zmp command to the new CMake build
-      system. These are actively being upstreamed during the v1.11
-      development cycle.
+      This is a MarkDown **styling** of what happened to overall to this part.
     projects:
       - name: MCUBoot
         manifest_project: mcuboot
+        features:    # optional
+          - heading: Feature 1
+            summary: |
+              MarkDown **styled** description
+        bug_fixes:   # optional
+          - heading: Bug 1
+            summary: |
+              MarkDown **styled** description of issue
       - name: Zephyr
         manifest_project: zephyr
-        bug_fixes:
-          - heading: Bluetooth fixes
+        features:    # optional
+          - heading: Feature 1
             summary: |
-              Notable fixes include over ten patches to Bluetooth
-              Mesh, along with two fixes to the core BT controller
-              code.
-          - heading: CMake fixes
+              MarkDown **styled** description
+        bug_fixes:   # optional
+          - heading: Bug 1
             summary: |
-              The CMake build system received several fixes for
-              various issues.
-          - heading: IPv6 ND fix
-            summary: |
-              A fix to the core IPv6 networking code was merged which
-              fixes how random timers are initialized during neighbor
-              discovery, eliminating erroneous traffic on the network.
+              MarkDown **styled** description of issue
       - name: Zephyr FOTA Samples
         manifest_project: zephyr-fota-samples
-        features:
-          - heading: hawkBit switches to new HTTP library
+        features:    # optional
+          - heading: Feature 1
             summary: |
-              The hawkBit demo has been updated to use the new HTTP
-              library. This eliminates various deprecation-related
-              warnings in the build.
-        bug_fixes:
-          - heading: Fixes for local.conf files
+              MarkDown **styled** description
+        bug_fixes:   # optional
+          - heading: Bug 1
             summary: |
-              The build has been fixed for users who have a local.conf
-              in one of their application directories.
+              MarkDown **styled** description of issue
