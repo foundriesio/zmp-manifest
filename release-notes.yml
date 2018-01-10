@@ -1,43 +1,58 @@
 highlights:
-  - Highlight 1
-  - Highlight 2
+  - Bluetooth behaviors impacting MAC addresses are changed following Linux
+    microPlatform update
 
 summary: |
- This is markdown text coverted to HTML that can do styling with **bold** and
- *italics*. It will get converted to HTML that the web UI can display.
+  The most significant change in this update follows the Linux
+  microPlatform switch to a Linux v4.14-based tree. This impacts
+  compatibility with any gateways relying on the old Bluetooth
+  behavior, and also will cause changes to the MAC addresses reported
+  by the Zephyr microPlatform sample applications. Users of the
+  bt-joiner container whitelist feature in the Linux microPlatform
+  will need to update their whitelists. Specifically, the leading
+  D6:E7 in the MAC addresses must be changed to D4:E7.
 
 parts:
   - name: Zephyr microPlatform
     summary: |
-      This is a MarkDown **styling** of what happened to overall to this part.
+      The major incompatible change is to the applications.
+
+      No changes from upstream MCUBoot were merged. A subsequent
+      udpate will pull in changes targeted for the next upstream
+      MCUBoot point release.
+
+      Zephyr includes a single bugfix.
     projects:
       - name: MCUBoot
         manifest_project: mcuboot
-        features:    # optional
-          - heading: Feature 1
-            summary: |
-              MarkDown **styled** description
-        bug_fixes:   # optional
-          - heading: Bug 1
-            summary: |
-              MarkDown **styled** description of issue
       - name: Zephyr
         manifest_project: zephyr
-        features:    # optional
-          - heading: Feature 1
+        bug_fixes:
+          - heading: LWM2M packet fix
             summary: |
-              MarkDown **styled** description
-        bug_fixes:   # optional
-          - heading: Bug 1
-            summary: |
-              MarkDown **styled** description of issue
+              The LWM2M stack includes a fix which prevents a packet
+              which may need to be retransmitted from being freed
+              until after this retransmission has completed, if necessary.
       - name: Zephyr FOTA Samples
         manifest_project: zephyr-fota-samples
-        features:    # optional
-          - heading: Feature 1
+        features:
+          - heading: CONFIG_NET_L2_BT_ZEP1656 disabled
             summary: |
-              MarkDown **styled** description
-        bug_fixes:   # optional
-          - heading: Bug 1
+              This obscure option was used to preserve compatibility
+              contrary to the Bluetooth specification with
+              implementation characteristics in the Linux kernel. Now
+              that the upstream Linux microPlatform was updated to
+              v4.14, which has fixes for these characteristics, the
+              option can be disabled.
+          - heading: dm-hawkbit-mqtt cleanups and optimizations
             summary: |
-              MarkDown **styled** description of issue
+              Various confusing implementation details in this
+              application have been fixed and otherwise cleaned
+              up. The resulting application now requires less memory.
+        bug_fixes:
+          - heading: Packet pool workaround for MQTT
+            summary: |
+              The dm-hawkbit-mqttt sample now uses an extra packet
+              pool when the underlying link layer is Bluetooth. This
+              keeps the network stack working in the face of IPv6
+              packet header compression.
