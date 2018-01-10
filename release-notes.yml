@@ -1,91 +1,43 @@
 highlights:
-  - "**Non-fast-forward** Zephyr update to 1.11 development tree"
+  - Highlight 1
+  - Highlight 2
 
 summary: |
-  The major change in this update is a non-fast-forward Zephyr
-  repository tree based on the upstream 1.11 development tree.
+ This is markdown text coverted to HTML that can do styling with **bold** and
+ *italics*. It will get converted to HTML that the web UI can display.
+
 parts:
   - name: Zephyr microPlatform
     summary: |
-      "**Important note:** This is the first non-fast-forward update since
-      the start of the 1.11 development cycle. The Zephyr tree is
-      being merged into an updated OSF master with all outstanding
-      patches cherry-picked onto the v1.10 tag. The Zephyr commits
-      01287ca61 (new v1.11-based tree) and 06f1e76ed (old v1.10-based
-      tree) have zero diff, and merging Zephyr trees into downstream
-      trees can start there to avoid conflicts."
+      This is a MarkDown **styling** of what happened to overall to this part.
     projects:
       - name: MCUBoot
         manifest_project: mcuboot
+        features:    # optional
+          - heading: Feature 1
+            summary: |
+              MarkDown **styled** description
+        bug_fixes:   # optional
+          - heading: Bug 1
+            summary: |
+              MarkDown **styled** description of issue
       - name: Zephyr
         manifest_project: zephyr
         features:    # optional
-          - heading: Memory security improvements for ARC
+          - heading: Feature 1
             summary: |
-              The ARC architecture has gained additional memory
-              security support.
-          - heading: I2C for STM32F0
-            summary: |
-              The STM32F0 SoC family gained I2C support.
-          - heading: New Bluetooth testing API and cases
-            summary: |
-              Bluetooth grew a new testing API, and several test cases
-              were merged.
-          - heading: Board support and peripheral enablement
-            summary: |
-              Various fixes and peripheral enablement in the boards,
-              across architectures.
-          - heading: Ethernet improvements for mcux driver
-            summary: |
-              The mcux ethernet driver now disables promiscuous mode
-              by default, and also implements IPv6 multicast group
-              joining/leaving.
-          - heading: Device tree bindings for sensors and I2C
-            summary: |
-              A generic yaml description for some sensors and I2C
-              devices was added to device tree, along with other
-              sensor- and I2C-related fixes.
-          - heading: Legacy cleanups
-            summary: |
-              Thread groups were removed from the kernel, along with
-              other cleanups in clocks and timers.
-          - heading: Flashing/debugging changes
-            summary: |
-              The flash and debug infrastructure has been reworked to
-              largely eliminate the use of environment variables. All
-              board files were affected. Out-of-tree boards will need
-              to be updated. Users of in-tree boards have been
-              updated. User workflows that use the old environment
-              variables will need updates.
-          - heading: size_report changes
-            summary: |
-              Similarly to the flashing and debugging changes, the
-              size_report script now uses command-line arguments
-              instead of environment variables. User workflows that
-              use the old environment variables will need updates.
+              MarkDown **styled** description
         bug_fixes:   # optional
-          - heading: STM32F0 flash fixes
+          - heading: Bug 1
             summary: |
-              The STM32F0 SoC family has fixes for the flash driver
-          - heading: LWM2M fixes
-            summary: |
-              Several network fixes were merged for the LWM2M library.
-          - heading: IEEE 802.15.4 fixes
-            summary: |
-              Fixes were merged for IEEE 802.15.4.
-          - heading: Some BT Mesh fixes
-            summary: |
-              A few fixes and improvements were made to the Bluetooth
-              Mesh app. The pace of fixes on this new feature appears
-              to be slowing down, indicating greater maturity.
+              MarkDown **styled** description of issue
       - name: Zephyr FOTA Samples
         manifest_project: zephyr-fota-samples
-        bug_fixes:   # optional
-          - heading: Fixes for blockages in the TCP stack
+        features:    # optional
+          - heading: Feature 1
             summary: |
-              The dm-hawkbit-mqtt sample reduced the TCP retry count,
-              which prevents the TCP stack from blocking due to low
-              memory conditions when many retry packets are in flight.
-              This is a tradeoff between compliance with RFC
-              recommendations for retry time and a working system with
-              tight memory constraints.
+              MarkDown **styled** description
+        bug_fixes:   # optional
+          - heading: Bug 1
+            summary: |
+              MarkDown **styled** description of issue
