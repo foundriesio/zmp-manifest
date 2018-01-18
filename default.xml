@@ -13,7 +13,10 @@
             revision="f2a597fa3dd1c7b15e0fee62f6932b253295803d"
             path="mcuboot/sim/mcuboot-sys/mbedtls" />
 
-  <project name="zephyr-fota-samples"/>
+  <project name="dm-hawkbit-mqtt"
+           path="zephyr-fota-samples/dm-hawkbit-mqtt"/>
+  <project name="dm-lwm2m"
+           path="zephyr-fota-samples/dm-lwm2m"/>
   <project name="zmp-build"
            path="build">
         <linkfile src="zmp.py" dest="zmp"/>
