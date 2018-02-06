@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="https://git.foundries.io/development/microplatforms/zephyr" name="osf-dev"/>
-  
-  <default remote="osf-dev" revision="master" sync-j="4"/>
-  
+  <remote fetch="https://source.foundries.io" name="subscriber-microplatforms"/>
+
+  <default remote="subscriber-microplatforms" revision="master" sync-j="4"/>
+
   <project name="dm-hawkbit-mqtt" path="zephyr-fota-samples/dm-hawkbit-mqtt" revision="2aa3aa03445b1ac181d7aa5a8c7e76f060d89f4c" upstream="master"/>
   <project name="dm-lwm2m" path="zephyr-fota-samples/dm-lwm2m" revision="9f90a4954e2ce23011749507ac9c8fb4aa1e73eb" upstream="master"/>
   <project name="mbedtls" path="mcuboot/sim/mcuboot-sys/mbedtls" revision="f2a597fa3dd1c7b15e0fee62f6932b253295803d"/>
