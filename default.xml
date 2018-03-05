@@ -10,7 +10,7 @@
   <project name="zephyr"/>
   <project name="mcuboot"/>
   <project name="mbedtls"
-            revision="f2a597fa3dd1c7b15e0fee62f6932b253295803d"
+            revision="32605dc83042d737e715a685e53176388d73540e"
             path="mcuboot/sim/mcuboot-sys/mbedtls" />
 
   <project name="dm-hawkbit-mqtt"
