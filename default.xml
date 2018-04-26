@@ -3,8 +3,8 @@
   
   <default remote="subscriber-microplatforms" revision="master" sync-j="4" />
   
-  <project name="dm-hawkbit-mqtt" path="zephyr-fota-samples/dm-hawkbit-mqtt" remote="subscriber-microplatforms" revision="6805b8942aa649fd599dc1a1b4107072a3f0b787" upstream="master" />
-  <project name="dm-lwm2m" path="zephyr-fota-samples/dm-lwm2m" remote="subscriber-microplatforms" revision="6439876765251847e78dc73bf7ba377d39ef7d3c" upstream="master" />
+  <project name="dm-hawkbit-mqtt" path="zephyr-fota-samples/dm-hawkbit-mqtt" remote="subscriber-microplatforms" revision="e72901ee1fe081b3a58476a77d4ccad9bded76b8" upstream="master" />
+  <project name="dm-lwm2m" path="zephyr-fota-samples/dm-lwm2m" remote="subscriber-microplatforms" revision="1361d227f2246ce1beaaf0538d2e3ae30d5628b7" upstream="master" />
   <project name="mbedtls" path="mcuboot/sim/mcuboot-sys/mbedtls" remote="subscriber-microplatforms" revision="32605dc83042d737e715a685e53176388d73540e" />
   <project name="mcuboot" remote="subscriber-microplatforms" revision="b7d504057aa88a97a48066865eef43d72b3f692e" upstream="master" />
   <project name="zephyr" remote="subscriber-microplatforms" revision="6ea6facbd8dec4c0a7ece8970370bed4cc486b27" upstream="master" />
