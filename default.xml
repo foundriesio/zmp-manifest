@@ -3,14 +3,14 @@
   
   <default remote="subscriber-microplatforms" revision="master" sync-j="4" />
   
-  <project name="dm-hawkbit-mqtt" path="zephyr-fota-samples/dm-hawkbit-mqtt" remote="subscriber-microplatforms" revision="e72901ee1fe081b3a58476a77d4ccad9bded76b8" upstream="master" />
-  <project name="dm-lwm2m" path="zephyr-fota-samples/dm-lwm2m" remote="subscriber-microplatforms" revision="1361d227f2246ce1beaaf0538d2e3ae30d5628b7" upstream="master" />
+  <project name="dm-hawkbit-mqtt" path="zephyr-fota-samples/dm-hawkbit-mqtt" remote="subscriber-microplatforms" revision="a7fbfa20005540fcc04ad1aef75f5283a73a7d6d" upstream="master" />
+  <project name="dm-lwm2m" path="zephyr-fota-samples/dm-lwm2m" remote="subscriber-microplatforms" revision="da9f49d38596de5e6714ccd59d670c8c8936908c" upstream="master" />
   <project name="mbedtls" path="mcuboot/sim/mcuboot-sys/mbedtls" remote="subscriber-microplatforms" revision="32605dc83042d737e715a685e53176388d73540e" />
   <project name="mcuboot" remote="subscriber-microplatforms" revision="31e62819588956b1fd39a63c3de19777644d23da" upstream="master" />
-  <project name="zephyr" remote="subscriber-microplatforms" revision="e0f43e8beb4d4cdcaeb0e81a3934658d20f3bcbe" upstream="master" />
+  <project name="zephyr" remote="subscriber-microplatforms" revision="514669691415423bf7789d05cabebe8d6606fc3e" upstream="master" />
   <project name="zmp-build" path="build" remote="subscriber-microplatforms" revision="510ade5d870c5211ac10189a36908482b019ffb4" upstream="master">
     <linkfile dest="zmp" src="zmp.py" />
   </project>
-  <project name="zmp-container" path="build/other/zmp-container" remote="subscriber-microplatforms" revision="a92675bedcf71ccae35bad2ef92c8c99184d9ba3" upstream="master" />
+  <project name="zmp-container" path="build/other/zmp-container" remote="subscriber-microplatforms" revision="7d2f756a3a79fad0f2ace0195edb41e37162241d" upstream="master" />
   <project clone-depth="1" name="zmp-prebuilt" path="build/other/zmp-prebuilt" remote="subscriber-microplatforms" revision="ad7fd50ba7ca2a8bf84afcdb510a6bd97e1cb0f4" upstream="master" />
 </manifest>
