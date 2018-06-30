@@ -3,14 +3,14 @@
   
   <default remote="subscriber-microplatforms" revision="master" sync-j="4" />
   
-  <project name="dm-hawkbit-mqtt" path="zephyr-fota-samples/dm-hawkbit-mqtt" remote="subscriber-microplatforms" revision="23046ba0084bd5ffdb3752ce221b620488b4b3af" upstream="master" />
-  <project name="dm-lwm2m" path="zephyr-fota-samples/dm-lwm2m" remote="subscriber-microplatforms" revision="400e43ec5be8bf27254ccd38ea4624bb9c37dc85" upstream="master" />
+  <project name="dm-hawkbit-mqtt" path="zephyr-fota-samples/dm-hawkbit-mqtt" remote="subscriber-microplatforms" revision="ce75a858819aa6ebb8b4332a7e2d926b8c4f3116" upstream="master" />
+  <project name="dm-lwm2m" path="zephyr-fota-samples/dm-lwm2m" remote="subscriber-microplatforms" revision="d454dececa1251c051a8abc6e0ac18c507714c32" upstream="master" />
   <project name="mbedtls" path="mcuboot/sim/mcuboot-sys/mbedtls" remote="subscriber-microplatforms" revision="32605dc83042d737e715a685e53176388d73540e" />
   <project name="mcuboot" remote="subscriber-microplatforms" revision="9f02140fe71650935c37187a3a8f127f5d9a9c82" upstream="master" />
-  <project name="zephyr" remote="subscriber-microplatforms" revision="4640305b4b79fd553d9d32411a2a92495f7ff942" upstream="master" />
-  <project name="zmp-build" path="build" remote="subscriber-microplatforms" revision="0afb1bd646752b2b0bc716c02090ce270ec336c4" upstream="master">
+  <project name="zephyr" remote="subscriber-microplatforms" revision="aaaf87d6ca65f52009dd61a67d89276528a840d8" upstream="master" />
+  <project name="zmp-build" path="build" remote="subscriber-microplatforms" revision="633f98fc87dace8409e1822cd24c1d57ff8b003f" upstream="master">
     <linkfile dest="zmp" src="zmp.py" />
   </project>
-  <project name="zmp-container" path="build/other/zmp-container" remote="subscriber-microplatforms" revision="6f8f1c2e4306f8d4129665940ca88fef487c4da8" upstream="master" />
+  <project name="zmp-container" path="build/other/zmp-container" remote="subscriber-microplatforms" revision="0128d86f2ea58b93cfe5555e2a5f62c6a7bfbb08" upstream="master" />
   <project clone-depth="1" name="zmp-prebuilt" path="build/other/zmp-prebuilt" remote="subscriber-microplatforms" revision="ad7fd50ba7ca2a8bf84afcdb510a6bd97e1cb0f4" upstream="master" />
 </manifest>
