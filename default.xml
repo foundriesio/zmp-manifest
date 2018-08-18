@@ -1,8 +1,8 @@
 <manifest>
-  <remote fetch="https://source.foundries.io" name="subscriber-microplatorms" />
-  
+  <remote fetch="https://source.foundries.io" name="subscriber-microplatforms" />
+
   <default remote="subscriber-microplatforms" revision="master" sync-j="4" />
-  
+
   <project name="dm-hawkbit-mqtt" path="zephyr-fota-samples/dm-hawkbit-mqtt" remote="subscriber-microplatforms" revision="5ef6a0f1002e2626d60304f7846998c288644fec" upstream="master" />
   <project name="dm-lwm2m" path="zephyr-fota-samples/dm-lwm2m" remote="subscriber-microplatforms" revision="f60a3c723fbd8c0fd627fee5d2c37a1c4909ea92" upstream="master" />
   <project name="mbedtls" path="mcuboot/sim/mcuboot-sys/mbedtls" remote="subscriber-microplatforms" revision="32605dc83042d737e715a685e53176388d73540e" />
