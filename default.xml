@@ -3,12 +3,12 @@
 
   <default remote="subscriber-microplatforms" revision="master" sync-j="4" />
 
-  <project name="dm-hawkbit-mqtt" path="zephyr-fota-samples/dm-hawkbit-mqtt" remote="subscriber-microplatforms" revision="5ef6a0f1002e2626d60304f7846998c288644fec" upstream="master" />
-  <project name="dm-lwm2m" path="zephyr-fota-samples/dm-lwm2m" remote="subscriber-microplatforms" revision="f60a3c723fbd8c0fd627fee5d2c37a1c4909ea92" upstream="master" />
+  <project name="dm-hawkbit-mqtt" path="zephyr-fota-samples/dm-hawkbit-mqtt" remote="subscriber-microplatforms" revision="b9b8bb3c5080b68ed950a0114ab3cffb403174d3" upstream="master" />
+  <project name="dm-lwm2m" path="zephyr-fota-samples/dm-lwm2m" remote="subscriber-microplatforms" revision="f502cb0bbc64858a20135ed2bc6d495404611439" upstream="master" />
   <project name="mbedtls" path="mcuboot/sim/mcuboot-sys/mbedtls" remote="subscriber-microplatforms" revision="32605dc83042d737e715a685e53176388d73540e" />
-  <project name="mcuboot" remote="subscriber-microplatforms" revision="19ced8c893febc40cb224e468d2604c0dae3caf8" upstream="master" />
-  <project name="zephyr" remote="subscriber-microplatforms" revision="ec5439fc7d0955763e6a6e5b655f938c54a24bf9" upstream="master" />
-  <project name="zmp-build" path="build" remote="subscriber-microplatforms" revision="856851cd5012ece4551dd9bbd29c8677ee688964" upstream="master">
+  <project name="mcuboot" remote="subscriber-microplatforms" revision="c892e5f627b2682c7d88958597f5f05221e2e9d5" upstream="master" />
+  <project name="zephyr" remote="subscriber-microplatforms" revision="f20efa79d91fe54df66dd6512a3707481ec516a6" upstream="master" />
+  <project name="zmp-build" path="build" remote="subscriber-microplatforms" revision="a75ca1d9e33ce906b86d8ed4b9292055a70358b3" upstream="master">
     <linkfile dest="zmp" src="zmp.py" />
   </project>
   <project name="zmp-container" path="build/other/zmp-container" remote="subscriber-microplatforms" revision="0128d86f2ea58b93cfe5555e2a5f62c6a7bfbb08" upstream="master" />
