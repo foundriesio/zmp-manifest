@@ -26,4 +26,6 @@
   <project name="zmp-prebuilt"
            clone-depth="1"
            path="build/other/zmp-prebuilt"/>
+  <project name="west"
+           path="build/other/west"/>
 </manifest>
