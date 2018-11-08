@@ -3,13 +3,13 @@
   
   <default remote="subscriber-microplatforms" revision="master" sync-j="4" />
   
-  <project name="dm-hawkbit-mqtt" path="zephyr-fota-samples/dm-hawkbit-mqtt" remote="subscriber-microplatforms" revision="6adc2ee70544a3e9b1053081ae238b086936befd" upstream="master" />
-  <project name="dm-lwm2m" path="zephyr-fota-samples/dm-lwm2m" remote="subscriber-microplatforms" revision="82403c49b8407d97bf8547f49e8ca6b128c5f5d3" upstream="master" />
+  <project name="dm-hawkbit-mqtt" path="zephyr-fota-samples/dm-hawkbit-mqtt" remote="subscriber-microplatforms" revision="65c3b45441422a2661e52276f4522d5b2e47b7fe" upstream="master" />
+  <project name="dm-lwm2m" path="zephyr-fota-samples/dm-lwm2m" remote="subscriber-microplatforms" revision="847c7346052b00d2bb21f94bf817886619e5a547" upstream="master" />
   <project name="mbedtls" path="mcuboot/sim/mcuboot-sys/mbedtls" remote="subscriber-microplatforms" revision="6c34268e203d23bbfbfda3f7362dac8b9b9382bc" />
-  <project name="mcuboot" remote="subscriber-microplatforms" revision="390ee4435ccd5a750524128c24e76b37daf7b877" upstream="master" />
+  <project name="mcuboot" remote="subscriber-microplatforms" revision="2bdfbdefccfe251a4a92530fc09ad928c9c28074" upstream="master" />
   <project name="west" path="build/other/west" remote="subscriber-microplatforms" revision="b678172f60eddbcc8266146c87018687cb69a616" upstream="master" />
-  <project name="zephyr" remote="subscriber-microplatforms" revision="39410684df127fa7b1250637d0557ef808a9ee22" upstream="master" />
-  <project name="zmp-build" path="build" remote="subscriber-microplatforms" revision="81d5d80baa51c19773369add40f1910bd245fe2c" upstream="master">
+  <project name="zephyr" remote="subscriber-microplatforms" revision="83abbf8733a19632c90a22fdc74ca18587ddeb7f" upstream="master" />
+  <project name="zmp-build" path="build" remote="subscriber-microplatforms" revision="05d138e586faa5db9e730c1241ccf67a494da03a" upstream="master">
     <linkfile dest="zmp" src="zmp.py" />
   </project>
   <project name="zmp-container" path="build/other/zmp-container" remote="subscriber-microplatforms" revision="9f7bda5c80b2e3a9b5ed7f9c69e878fc4853929b" upstream="master" />
