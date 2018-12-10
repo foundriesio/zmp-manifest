@@ -1,14 +1,14 @@
 <manifest>
   <remote fetch="https://source.foundries.io" name="subscriber-microplatforms" />
-  
+
   <default remote="subscriber-microplatforms" revision="master" sync-j="4" />
-  
-  <project name="dm-hawkbit-mqtt" path="zephyr-fota-samples/dm-hawkbit-mqtt" remote="subscriber-microplatforms" revision="65c3b45441422a2661e52276f4522d5b2e47b7fe" upstream="master" />
-  <project name="dm-lwm2m" path="zephyr-fota-samples/dm-lwm2m" remote="subscriber-microplatforms" revision="847c7346052b00d2bb21f94bf817886619e5a547" upstream="master" />
+
+  <project name="dm-hawkbit-mqtt" path="zephyr-fota-samples/dm-hawkbit-mqtt" remote="subscriber-microplatforms" revision="826999e018406392df268fccc8d44605f53fcb5d" upstream="master" />
+  <project name="dm-lwm2m" path="zephyr-fota-samples/dm-lwm2m" remote="subscriber-microplatforms" revision="53bb9f671f5316a90b6d175127947a58e45e2a27" upstream="master" />
   <project name="mbedtls" path="mcuboot/sim/mcuboot-sys/mbedtls" remote="subscriber-microplatforms" revision="6c34268e203d23bbfbfda3f7362dac8b9b9382bc" />
-  <project name="mcuboot" remote="subscriber-microplatforms" revision="2bdfbdefccfe251a4a92530fc09ad928c9c28074" upstream="master" />
+  <project name="mcuboot" remote="subscriber-microplatforms" revision="6048aed77c5f4e422e04f3a4a1c1b410077d7760" upstream="master" />
   <project name="west" path="build/other/west" remote="subscriber-microplatforms" revision="b678172f60eddbcc8266146c87018687cb69a616" upstream="master" />
-  <project name="zephyr" remote="subscriber-microplatforms" revision="83abbf8733a19632c90a22fdc74ca18587ddeb7f" upstream="master" />
+  <project name="zephyr" remote="subscriber-microplatforms" revision="43cead56455db7c3fe12f71b574394d34e77d11b" upstream="master" />
   <project name="zmp-build" path="build" remote="subscriber-microplatforms" revision="05d138e586faa5db9e730c1241ccf67a494da03a" upstream="master">
     <linkfile dest="zmp" src="zmp.py" />
   </project>
