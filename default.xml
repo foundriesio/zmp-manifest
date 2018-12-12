@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="osf-dev"
-          fetch="https://git.foundries.io/development/microplatforms/zephyr"/>
+  <remote name="fio"
+          fetch="https://github.com/foundriesio"/>
 
-  <default remote="osf-dev"
+  <default remote="fio"
            revision="master"
            sync-j="4"/>
 
