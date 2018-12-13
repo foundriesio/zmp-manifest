@@ -21,6 +21,10 @@
            path="build">
         <linkfile src="zmp.py" dest="zmp"/>
   </project>
+  <!-- zephyr_tools is placed directly under build, rather than build/other/,
+       to make its modules easy to import. -->
+  <project name="zephyr_tools"
+           path="build/zephyr_tools"/>
   <project name="zmp-container"
            path="build/other/zmp-container"/>
   <project name="zmp-prebuilt"
