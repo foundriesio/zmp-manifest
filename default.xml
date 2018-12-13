@@ -17,19 +17,18 @@
            path="zephyr-fota-samples/dm-hawkbit-mqtt"/>
   <project name="dm-lwm2m"
            path="zephyr-fota-samples/dm-lwm2m"/>
-  <project name="zmp-build"
-           path="build">
+  <project name="zmp-build">
         <linkfile src="zmp.py" dest="zmp"/>
   </project>
-  <!-- zephyr_tools is placed directly under build, rather than build/other/,
-       to make its modules easy to import. -->
+  <!-- zephyr_tools is placed directly under zmp-build, rather than
+       build/other/, to make its modules easy to import. -->
   <project name="zephyr_tools"
-           path="build/zephyr_tools"/>
+           path="zmp-build/zephyr_tools"/>
   <project name="zmp-container"
-           path="build/other/zmp-container"/>
+           path="zmp-build/other/zmp-container"/>
   <project name="zmp-prebuilt"
            clone-depth="1"
-           path="build/other/zmp-prebuilt"/>
+           path="zmp-build/other/zmp-prebuilt"/>
   <project name="west"
-           path="build/other/west"/>
+           path="zmp-build/other/west"/>
 </manifest>
