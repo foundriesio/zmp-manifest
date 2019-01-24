@@ -17,6 +17,8 @@
            path="zephyr-fota-samples/dm-hawkbit-mqtt"/>
   <project name="dm-lwm2m"
            path="zephyr-fota-samples/dm-lwm2m"/>
+  <project name="dm-lwm2m-light"
+           path="zephyr-fota-samples/dm-lwm2m-light"/>
   <project name="zmp-build">
         <linkfile src="zmp.py" dest="zmp"/>
   </project>
