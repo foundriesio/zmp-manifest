@@ -1,0 +1,32 @@
+# West manifest file for Foundries.io Zephyr microPlatform.
+
+west:
+  url: https://github.com/foundriesio/west
+
+manifest:
+  defaults:
+    remote: foundriesio
+
+  remotes:
+    - name: foundriesio
+      url-base: https://github.com/foundriesio
+
+  projects:
+    # Zephyr and MCUboot
+    - name: zephyr
+      west-commands: scripts/west-commands.yml
+    - name: mcuboot
+    - name: mbedtls
+      path: mcuboot/sim/mcuboot-sys/mbedtls
+      revision: 60fbd5bdf05c223b641677204469b53c2ff39d4e
+
+    # Sample apps; just one for now
+    - name: dm-lwm2m
+      path: zmp-samples/dm-lwm2m
+
+    # Other
+    - name: zephyr_tools
+    - name: zmp-container
+
+  self:
+    path: zmp-manifest
