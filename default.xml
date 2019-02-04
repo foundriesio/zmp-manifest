@@ -13,8 +13,6 @@
             revision="6c34268e203d23bbfbfda3f7362dac8b9b9382bc"
             path="mcuboot/sim/mcuboot-sys/mbedtls" />
 
-  <project name="dm-hawkbit-mqtt"
-           path="zephyr-fota-samples/dm-hawkbit-mqtt"/>
   <project name="dm-lwm2m"
            path="zephyr-fota-samples/dm-lwm2m"/>
   <project name="dm-lwm2m-light"
