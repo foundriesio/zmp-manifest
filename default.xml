@@ -2,20 +2,22 @@
 <manifest>
   <remote name="fio"
           fetch="https://github.com/foundriesio"/>
+  <remote name="mike-scott"
+          fetch="https://github.com/mike-scott"/>
 
   <default remote="fio"
            revision="master"
            sync-j="4"/>
 
-  <project name="zephyr"/>
-  <project name="mcuboot"/>
+  <project name="zephyr" remote="mike-scott" revision="zmp-20190131"/>
+  <project name="mcuboot" remote="mike-scott" revision="zmp-20190131"/>
   <project name="mbedtls"
             revision="6c34268e203d23bbfbfda3f7362dac8b9b9382bc"
             path="mcuboot/sim/mcuboot-sys/mbedtls" />
 
-  <project name="dm-lwm2m"
+  <project name="dm-lwm2m" remote="mike-scott" revision="zmp-20190131"
            path="zephyr-fota-samples/dm-lwm2m"/>
-  <project name="dm-lwm2m-light"
+  <project name="dm-lwm2m-light" remote="mike-scott" revision="zmp-20190131"
            path="zephyr-fota-samples/dm-lwm2m-light"/>
   <project name="zmp-build">
         <linkfile src="zmp.py" dest="zmp"/>
