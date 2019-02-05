@@ -10,7 +10,7 @@
   <project name="zephyr"/>
   <project name="mcuboot"/>
   <project name="mbedtls"
-            revision="6c34268e203d23bbfbfda3f7362dac8b9b9382bc"
+            revision="60fbd5bdf05c223b641677204469b53c2ff39d4e"
             path="mcuboot/sim/mcuboot-sys/mbedtls" />
 
   <project name="dm-lwm2m"
