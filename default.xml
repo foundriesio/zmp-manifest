@@ -29,6 +29,7 @@
   <project name="zmp-prebuilt"
            clone-depth="1"
            path="zmp-build/other/zmp-prebuilt"/>
-  <project name="west"
+  <!-- Temporarily pin west to release 38 while we migrate -->
+  <project name="west" revision="refs/tags/mp-38"
            path="zmp-build/other/west"/>
 </manifest>
