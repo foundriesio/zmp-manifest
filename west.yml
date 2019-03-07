@@ -10,12 +10,18 @@ manifest:
   remotes:
     - name: foundriesio
       url-base: https://github.com/foundriesio
+    - name: mike-scott
+      url-base: https://github.com/mike-scott
 
   projects:
     # Zephyr and MCUboot
     - name: zephyr
       west-commands: scripts/west-commands.yml
+      remote: mike-scott
+      revision: fio-20190306
     - name: mcuboot
+      remote: mike-scott
+      revision: fio-20190306
     - name: mbedtls
       path: mcuboot/sim/mcuboot-sys/mbedtls
       revision: 60fbd5bdf05c223b641677204469b53c2ff39d4e
