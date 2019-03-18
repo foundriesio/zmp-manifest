@@ -26,6 +26,7 @@ manifest:
 
     # Other
     - name: zephyr_tools
+      west-commands: west-commands.yml
     - name: zmp-container
 
   self:
