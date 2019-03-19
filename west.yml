@@ -11,18 +11,18 @@ manifest:
   projects:
   - name: zephyr
     remote: foundriesio
-    revision: 4719bb4cab91862e98da8f15123f0452cae06143
+    revision: bb8378fe9f6782d55099e06361dde9db0708eb81
     west-commands: scripts/west-commands.yml
   - name: mcuboot
     remote: foundriesio
-    revision: 941cb0ff3144af8e18ff56cb60daf734b403ec60
+    revision: 4a2c6a92ae88b83f0b9f70a36d1b9dc341b5e8a1
   - name: mbedtls
     remote: foundriesio
     revision: 60fbd5bdf05c223b641677204469b53c2ff39d4e
     path: mcuboot/sim/mcuboot-sys/mbedtls
   - name: dm-lwm2m
     remote: foundriesio
-    revision: 538636f7ff398cc01237196252fa8780f3d0ea55
+    revision: c5c8a6700485f60fb605e8d2afc30743649c841c
     path: zmp-samples/dm-lwm2m
   - name: zephyr_tools
     remote: foundriesio
