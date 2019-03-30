@@ -1,6 +1,6 @@
 west:
   url: https://github.com/foundriesio/west
-  revision: ab560b5c64551cadffe191eecd79ff979cec3c8d
+  revision: 7ab671189ddd4428521bf1a92a05e0a6dd4f5c97
 manifest:
   defaults:
     remote: foundriesio
@@ -11,24 +11,25 @@ manifest:
   projects:
   - name: zephyr
     remote: foundriesio
-    revision: bb8378fe9f6782d55099e06361dde9db0708eb81
+    revision: bf42c701d68dec512796b84f6cdf737750756b20
     west-commands: scripts/west-commands.yml
   - name: mcuboot
     remote: foundriesio
-    revision: 4a2c6a92ae88b83f0b9f70a36d1b9dc341b5e8a1
+    revision: 166bf5fac418c03a2d5e631503c82ae6549eacf2
   - name: mbedtls
     remote: foundriesio
     revision: 60fbd5bdf05c223b641677204469b53c2ff39d4e
     path: mcuboot/sim/mcuboot-sys/mbedtls
   - name: dm-lwm2m
     remote: foundriesio
-    revision: c5c8a6700485f60fb605e8d2afc30743649c841c
+    revision: 1f0d22a694384b0a05d074cae2856857e33a208c
     path: zmp-samples/dm-lwm2m
   - name: zephyr_tools
     remote: foundriesio
-    revision: 7d8e4b97af614f608b6b089726f683aa5ab37925
+    revision: 6aa0636bed8cc0b6755d2b9ae2d917bb042c9742
+    west-commands: west-commands.yml
   - name: zmp-container
     remote: foundriesio
-    revision: 8c8eb3e3287dc9b68c5e507f51a4e27bada74a12
+    revision: e2c723ed2030c55b23a58aa8871bc021538f6880
   self:
     path: zmp-manifest
