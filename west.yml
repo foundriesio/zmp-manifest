@@ -11,11 +11,11 @@ manifest:
   projects:
   - name: zephyr
     remote: foundriesio
-    revision: 350cff330c1669373740a1567bd53d383632e17a
+    revision: 545880de29473b46b5a60033eb0b0b43eb09f59a
     west-commands: scripts/west-commands.yml
   - name: mcuboot
     remote: foundriesio
-    revision: b5957328d65f6d423a664885d5ed3b5cd01fcba8
+    revision: 8b6288a0618d2b68529c30133dfd776015426b63
   - name: mbedtls
     remote: foundriesio
     revision: 60fbd5bdf05c223b641677204469b53c2ff39d4e
